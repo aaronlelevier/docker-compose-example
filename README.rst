@@ -9,9 +9,8 @@ Inspiration
 Combining `Docker Compose` with the project layout used in the `HPD` talk below.
 
 Docker
-    Based off of the initial Quickstart from the Docker.com <a href="http://docs.docker.com/compose/">Compose Docs</a>
-
+    Based off of the initial Quickstart from the Docker.com Compose Docs: http://docs.docker.com/compose/
 High Performance Django (HPD)
-    hpd-talk using `fig` from here: <a href="https://github.com/ipmb/hpd-talk">https://github.com/ipmb/hpd-talk</a>
+    hpd-talk using `fig` from here: https://github.com/ipmb/hpd-talk
 HPD Talk YouTube video:
-    <a href="https://www.youtube.com/watch?v=Toa9lW8UMOA">https://www.youtube.com/watch?v=Toa9lW8UMOA</a>
+    https://www.youtube.com/watch?v=Toa9lW8UMOA
