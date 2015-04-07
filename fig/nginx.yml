@@ -1,0 +1,17 @@
+nginx:
+  build: fig/services/nginx
+  command: start.sh
+  ports:
+   - "8080:8080"
+db:
+  image: postgres
+web:
+  build: .
+  command: fig/services/nginx/run.sh
+  volumes:
+    - .:/code
+  ports:
+    - "8000:8000"
+  links:
+    - db
+
