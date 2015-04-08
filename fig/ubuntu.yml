@@ -1,5 +1,7 @@
 db:
   image: postgres
+ubuntu:
+  image: ubuntu
 web:
   build: fig/services/ubuntu
   command: python ./manage.py runserver 0.0.0.0:8000
@@ -9,3 +11,4 @@ web:
     - "8000:8000"
   links:
     - db
+    - ubuntu
