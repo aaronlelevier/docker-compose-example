@@ -8,5 +8,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql postgresql-cont
 RUN easy_install pip
 ADD ../../. /code
 WORKDIR /code
-EXPOSE 8000
 RUN pip install -r requirements.txt
