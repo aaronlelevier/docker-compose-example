@@ -1,9 +1,9 @@
-FROM ubuntu:trusty
+FROM debian:jessie
+MAINTAINER Matt Bentley <mbentley@mbentley.net>
+RUN (echo "deb http://http.debian.net/debian/ jessie main contrib non-free" > /etc/apt/sources.list && echo "deb http://http.debian.net/debian/ jessie-updates main contrib non-free" >> /etc/apt/sources.list && echo "deb http://security.debian.org/ jessie/updates main contrib non-free" >> /etc/apt/sources.list)
 RUN apt-get update
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential git python python-dev python-setuptools nginx supervisor
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql postgresql-contrib
-
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential git python python-dev python-setuptools nginx sqlite3 supervisor
 RUN easy_install pip
 RUN pip install uwsgi
 

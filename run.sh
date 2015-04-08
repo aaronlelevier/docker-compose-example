@@ -2,7 +2,7 @@
 
 MODULE=${MODULE:-website}
 
-sed -i "s#module=website.wsgi:application#module=${MODULE}.wsgi:application#g" /opt/django/fig/services/nginx/uwsgi.ini
+sed -i "s#module=website.wsgi:application#module=${MODULE}.wsgi:application#g" /opt/django/uwsgi.ini
 
 if [ ! -f "/opt/django/app/manage.py" ]
 then
