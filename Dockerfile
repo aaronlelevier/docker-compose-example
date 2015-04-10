@@ -14,7 +14,7 @@ RUN rm /etc/nginx/sites-enabled/default
 RUN ln -s /opt/django/django.conf /etc/nginx/sites-enabled/
 RUN ln -s /opt/django/supervisord.conf /etc/supervisor/conf.d/
 
-RUN pip install -r /opt/django/app/requirements.txt
+RUN pip install -r /opt/django/requirements.txt
 
 VOLUME ["/opt/django/app"]
 EXPOSE 80
